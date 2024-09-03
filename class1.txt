@@ -1,0 +1,51 @@
+create table jobs(
+job_id varchar(10),
+job_title varchar(10),
+min_salary int,
+max_salary int
+)  jobs table
+dependent table
+create table dependents(
+dependent_id int,
+first_name varchar(30),
+last_name varchar(30),
+relationship varchar(20),
+employee_id varchar(10)
+
+
+)
+departments table
+create table departments(
+department_id varchar(10),
+department_name varchar(30),
+location_id varchar(20)
+);
+
+regions table
+create table regions(
+region_id int,
+region_name varchar(30)
+);
+countries table
+create table countries(
+country_id varchar(10),
+country_name varchar(20),
+region_id varchar(10)
+);
+locations table
+create table locations(
+location_id varchar(10),
+street_address varchar(60),
+postal_code varchar(10)
+city varchar(20),
+state_province varchar(30),
+country_id varchar(10)
+);
+
+select count(*) from employees;--40--
+select count(*) from jobs;--19--
+ select count(*) from dependents;--30--
+ select count(*) from departments;--11--
+ select count(*) from regions;--4--
+ select count(*) from countries;--25--
+ select count(*) from locations;--7--
